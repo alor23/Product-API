@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Products api</name>
+    </assembly>
+    <members>
+        <member name="M:Products_api.Controllers.ProductController.GetProduct">
+            <summary>
+            Get all products
+            </summary>
+        </member>
+        <member name="M:Products_api.Controllers.ProductController.GetProduct(System.Guid)">
+            <summary>
+            Get product by id
+            </summary>
+            <response code = "400">Bad request</response>
+            <response code = "404">Product not found</response>
+        </member>
+        <member name="M:Products_api.Controllers.ProductController.PutProduct(System.Guid,Products_api.Models.Product)">
+            <summary>
+            Update product by id
+            </summary>
+            <response code = "400">Bad request</response>
+            <response code = "404">Product not found</response>
+        </member>
+        <member name="M:Products_api.Controllers.ProductController.GuidPostProduct(Products_api.Models.Product)">
+            <summary>
+            Create product
+            </summary>
+            <response code = "400">Bad request</response>
+        </member>
+        <member name="M:Products_api.Controllers.ProductController.DeleteProduct(System.Guid)">
+            <summary>
+            Delete product
+            </summary>
+            <response code = "400">Bad request</response>
+            <response code = "404">Product not found</response>
+        </member>
+    </members>
+</doc>
